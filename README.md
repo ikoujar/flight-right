@@ -10,8 +10,12 @@ You can access an online deployment for this project from the following URL:
 
 https://flight-right.vercel.app
 
+## Docs
+- [Enhancements](docs/ENHANCEMENTS.MD)
+- [Database](docs/DB.MD)
 
 ## Requirements
+-
 - Node.js
 - Node Package Manager (**NPM**)
 - MongoDB
