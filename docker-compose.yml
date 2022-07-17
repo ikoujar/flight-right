@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+  nginx:
+    build: ./nginx
+    ports:
+      - "3003:80"
+    depends_on:
+      - nextjs
+    restart: always
+  nextjs:
+    build: .
+    restart: always
+    depends_on:
+      - mongo
+    environment:
+      - DATA_PROVIDER_API=${DATA_PROVIDER_API}
+      - MONGODB_URI=${DOCKER_MONGODB_URI}
