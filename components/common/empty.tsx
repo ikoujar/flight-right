@@ -12,7 +12,7 @@ export default function Empty({ show }: Props) {
       <Card.Body className='text-center'>
         <TbMapSearch size={120} className='text-secondary' />
         <p className='text-secondary'>
-          Sorry there are no results
+          Sorry we couldn't find any results
         </p>
       </Card.Body>
     </Card>
