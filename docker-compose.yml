@@ -7,7 +7,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - "3003:80"
+      - "3004:80"
     depends_on:
       - nextjs
     restart: always

@@ -16,7 +16,6 @@ https://flight-right.vercel.app
 - [Database](docs/DB.md)
 
 ## Requirements
--
 - Node.js
 - Node Package Manager (**NPM**)
 - MongoDB
@@ -45,6 +44,8 @@ npm run dev
 yarn dev
 ```
 
+Open http://localhost:3000 with your browser to see the result.
+
 ### Build
 Build production:
 ```bash
@@ -62,7 +63,9 @@ yarn start
 
 
 ## Docker Installation
+
 In the project root dir, copy the sample environment file to .env and edit the variable to meet with your machine:
+
 ```bash
 cp .env.example .env
 ```
@@ -71,6 +74,7 @@ Start dockerized application:
 docker compose up
 ```
 
+Open http://localhost:3003 with your browser to see the result.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
