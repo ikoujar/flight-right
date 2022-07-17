@@ -6,12 +6,12 @@ import '../styles/globals.css';
 import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps }: AppProps) {
-    return (
-        <AppContextProvider>
-            <Component {...pageProps} />
-            <ToastContainer />
-        </AppContextProvider>
-    );
+  return (
+    <AppContextProvider>
+      <Component {...pageProps} />
+      <ToastContainer />
+    </AppContextProvider>
+  );
 }
 
 export default MyApp;

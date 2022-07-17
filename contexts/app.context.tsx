@@ -7,7 +7,8 @@ interface AppContextInterface {
 }
 
 const defaults: AppContextInterface = {
-    setCitizen: (data?: Citizen) => {}
+  setCitizen: (data?: Citizen) => {
+  }
 };
 
 export const AppContext = React.createContext(defaults);
