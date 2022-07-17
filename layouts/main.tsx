@@ -2,7 +2,6 @@ import Header from './partials/header';
 import { Container } from 'react-bootstrap';
 import Head from 'next/head';
 
-
 type Props = {
   children?: any,
   title: string,

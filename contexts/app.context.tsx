@@ -1,6 +1,10 @@
 import * as React from 'react';
 import { Citizen } from '../interfaces';
 
+/**
+ * Application context.
+ * Note: for this specific task it's not that important, but I prefer to use it to avoid component drilling.
+ */
 interface AppContextInterface {
   citizen?: Citizen;
   setCitizen: (data?: Citizen) => void;

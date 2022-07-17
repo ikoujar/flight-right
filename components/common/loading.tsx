@@ -4,6 +4,10 @@ type Props = {
   show: boolean
 }
 
+/**
+ * Loading component.
+ * @param show
+ */
 export default function Loading({ show }: Props) {
   if (!show) return <></>;
   return (

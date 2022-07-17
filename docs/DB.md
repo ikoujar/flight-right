@@ -3,10 +3,12 @@
 This Document explains the application database structure:
 
 ## DB Structure
-We are using the database to store voting logs only, so it's just a simple mongodb collection contains:
-- Voter IP
-- Country Code
 
+We are using the database to store voting logs only, so it's just a simple MongoDB collection containing:
+- Voter IP `String`
+- Country Code `String`
+
+Votes collection:
 ```json
 [
   {

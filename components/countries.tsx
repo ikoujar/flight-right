@@ -9,7 +9,9 @@ import { useApi } from '../hooks/useApi';
 import { Empty, Error, Loading, SearchForm } from './common';
 import { toast } from 'react-toastify';
 
-
+/**
+ * Countries list
+ */
 export default function CountriesList() {
 
   const { data: items, loading, error } = useApi('api/nat');

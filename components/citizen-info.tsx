@@ -5,6 +5,9 @@ import { FaMapPin } from 'react-icons/fa';
 import { Citizen } from '../interfaces';
 import moment from 'moment';
 
+/**
+ * Citizen details modal.
+ */
 export default function CitizenInfo() {
 
   const { citizen, setCitizen } = useContext(AppContext);

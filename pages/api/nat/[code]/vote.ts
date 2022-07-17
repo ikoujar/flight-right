@@ -5,7 +5,7 @@ import Vote from '../../../../models/vote';
 import { countries } from '../../../../utils/dataProvider';
 
 /**
- *
+ * Voting for a country by code.
  * @param req
  * @param res
  */
@@ -25,10 +25,12 @@ export default async function handler(
     if (!countriesArr.find(e => e.code === country)) {
       return res.status(404).json({ error: 'Not Found!' });
     }
+    // Check if the user voted already for the selected country.
     const votes = await Vote.countDocuments({ voter, country });
     if (votes > 0) {
       return res.status(403).json({ error: 'You already voted for this country!' });
     }
+    // Insert new voting record.
     await Vote.create({ voter, country });
     res.status(201).json({
       success: true

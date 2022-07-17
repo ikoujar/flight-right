@@ -15,6 +15,10 @@ type Props = {
   country: string
 }
 
+/**
+ * Citizens list component
+ * @param props
+ */
 export default function CitizensList(props: Props) {
 
   const router = useRouter();
@@ -29,6 +33,7 @@ export default function CitizensList(props: Props) {
   }, [data]);
 
   useEffect(() => {
+    // Rest the current page to 1 when the user performs searching.
     const params = {
       page: 1, q: search
     };

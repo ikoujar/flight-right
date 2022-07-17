@@ -5,6 +5,10 @@ import { useState } from 'react';
 type Props = {
   onSearch: (q?: string) => void
 }
+/**
+ * Reusable search form component.
+ * @param props
+ */
 export default function SearchForm(props: Props) {
 
   const [search, setSearch] = useState<string>();

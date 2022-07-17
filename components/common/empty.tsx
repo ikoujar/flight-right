@@ -4,7 +4,10 @@ import { TbMapSearch } from 'react-icons/tb';
 type Props = {
   show: boolean
 }
-
+/**
+ * Empty results component.
+ * @param show
+ */
 export default function Empty({ show }: Props) {
   if (!show) return <></>;
   return (

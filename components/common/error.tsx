@@ -5,6 +5,10 @@ type Props = {
   show: boolean
 }
 
+/**
+ * Error component.
+ * @param show
+ */
 export default function Error({ show }: Props) {
   if (!show) return <></>;
   return (

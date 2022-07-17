@@ -1,11 +1,16 @@
-import { Pagination } from 'react-bootstrap';
+import { Pagination as BootstrapPagination } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import { cleanQueryParams } from '../../utils/helpers';
 
 type Props = {
   count: number,
 }
-export default function BootstrapPagination({ count }: Props) {
+/**
+ * Pagination component.
+ * @param count
+ * @constructor
+ */
+export default function Pagination({ count }: Props) {
 
   const router = useRouter();
   const active = router.query.page || 1;
@@ -18,24 +23,24 @@ export default function BootstrapPagination({ count }: Props) {
   if (count <= 1) return <></>;
 
   return (
-    <Pagination className='justify-content-center'>
+    <BootstrapPagination className='justify-content-center'>
       {
         new Array(count).fill(0).map(
           (_, i) => {
             i++;
             return (
-              <Pagination.Item
+              <BootstrapPagination.Item
                 key={i}
                 active={i == active}
                 onClick={() => onChange(i)}
               >
                 {i}
-              </Pagination.Item>
+              </BootstrapPagination.Item>
             );
           }
         )
       }
 
-    </Pagination>
+    </BootstrapPagination>
   );
 }
