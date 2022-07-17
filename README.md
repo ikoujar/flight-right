@@ -4,11 +4,19 @@ This project built using Next.js framework.
 
 ![home.png](docs/home.png)
 
+## Online Demo
+
+You can access an online deployment for this project from the following URL:
+
+https://flight-right.vercel.app
+
+
 ## Requirements
 - Node.js
 - Node Package Manager (**NPM**)
 - MongoDB
 - Yarn (optional)
+
 
 ## Setup for local Development
 ### Installation
