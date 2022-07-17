@@ -11,8 +11,9 @@ You can access an online deployment for this project from the following URL:
 https://flight-right.vercel.app
 
 ## Docs
+- [API](docs/API.md)
 - [Enhancements](docs/ENHANCEMENTS.MD)
-- [Database](docs/DB.MD)
+- [Database](docs/DB.md)
 
 ## Requirements
 -
