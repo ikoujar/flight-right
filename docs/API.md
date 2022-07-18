@@ -1,7 +1,5 @@
 # Nationalities & Citizens
 
-This Document explains the application database structure:
-
 ## [GET] api/nat
 Returns a list of available nationalities/countries.
 
